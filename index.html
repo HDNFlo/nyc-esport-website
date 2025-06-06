@@ -20,13 +20,63 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>NYC E-Sport Clan</h1>
-      <p>Future is now – join the fight!</p>
-      <a href="join.html" class="btn">Jetzt beitreten</a>
-    </section>
-  </main>
+<main>
+  <section class="hero">
+    <h1>NYC E-Sport Clan</h1>
+    <p>Future is now – join the fight!</p>
+    <a href="join.html" class="btn">Jetzt beitreten</a>
+  </section>
+
+  <section class="slider">
+    <div class="slides" id="slides">
+      <!-- Slide 1 -->
+      <div class="slide">
+        <h2>Unser Team</h2>
+        <p>Lerne unsere Spieler & Coaches kennen.</p>
+        <a href="team.html" class="btn">Zum Team</a>
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide">
+        <h2>Kommende Matches</h2>
+        <p>Sei bei unseren nächsten Spielen live dabei!</p>
+        <a href="matches.html" class="btn">Match-Übersicht</a>
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide">
+        <h2>Kontakt & Partner</h2>
+        <p>Fragen, Sponsoring oder Interesse an Kooperationen?</p>
+        <a href="contact.html" class="btn">Kontaktieren</a>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="slider-buttons">
+      <button onclick="showSlide(0)">1</button>
+      <button onclick="showSlide(1)">2</button>
+      <button onclick="showSlide(2)">3</button>
+    </div>
+  </section>
+</main>
+
+  <script>
+  let currentSlide = 0;
+  const slides = document.getElementById("slides");
+  const totalSlides = slides.children.length;
+
+  function showSlide(index) {
+    currentSlide = index;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+  }
+
+  // Alle 5 Sekunden Slide wechseln
+  setInterval(nextSlide, 5000);
+</script>
+
 
   <footer>
     <p>© 2025 NYC E-Sport</p>
