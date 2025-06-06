@@ -44,11 +44,9 @@
         <a href="contact.html" class="btn">Kontaktieren</a>
       </div>
 
-      <div class="slider-buttons">
-        <button class="active" onclick="showSlide(0)">1</button>
-        <button onclick="showSlide(1)">2</button>
-        <button onclick="showSlide(2)">3</button>
-      </div>
+      <!-- Pfeil-Buttons -->
+      <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+      <button class="arrow right" onclick="nextSlide()">&#10095;</button>
     </section>
   </main>
 
@@ -59,14 +57,11 @@
 <script>
   let currentSlide = 0;
   const slides = document.querySelectorAll('.slide');
-  const buttons = document.querySelectorAll('.slider-buttons button');
 
   function showSlide(index) {
     slides[currentSlide].classList.remove('active');
-    buttons[currentSlide].classList.remove('active');
     currentSlide = index;
     slides[currentSlide].classList.add('active');
-    buttons[currentSlide].classList.add('active');
   }
 
   function nextSlide() {
@@ -74,9 +69,13 @@
     showSlide(next);
   }
 
+  function prevSlide() {
+    let prev = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(prev);
+  }
+
   setInterval(nextSlide, 5000);
 </script>
-
 
   <footer>
     <p>© 2025 NYC E-Sport</p>
