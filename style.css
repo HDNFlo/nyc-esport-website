@@ -83,7 +83,7 @@ footer {
   color: #a0f0e0;
 }
 
-.mission, .values {
+.mission, .values, .reputation {
   max-width: 700px;
   margin: 40px auto;
   padding: 0 20px;
@@ -92,7 +92,7 @@ footer {
   box-shadow: 0 0 20px #00ffcc33;
 }
 
-.mission h2, .values h2 {
+.mission h2, .values h2, .reputation h2 {
   font-size: 2rem;
   color: #ff0077;
   margin-bottom: 15px;
@@ -107,6 +107,13 @@ footer {
   text-align: center;
 }
 
+.reputation ul li {
+  font-size: 1.1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #00ffcc44;
+  color: #00ffcc;
+  text-align: center;
+}
 .values ul {
   list-style-type: none;
   padding: 0;
