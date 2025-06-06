@@ -107,6 +107,13 @@ footer {
   text-align: center;
 }
 
+.reputation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto 20px auto;
+  max-width: 400px;
+}
+
 .reputation ul li {
   font-size: 1.1rem;
   padding: 10px 0;
@@ -114,6 +121,11 @@ footer {
   color: #00ffcc;
   text-align: center;
 }
+
+.reputation ul li:last-child {
+  border-bottom: none;
+}
+
 .values ul {
   list-style-type: none;
   padding: 0;
