@@ -149,7 +149,6 @@ nav ul li a.active {
   color: #ff0077;
   text-shadow: 0 0 8px #ff0077;
 }
-/* Slider Styles */
 .slider {
   max-width: 800px;
   margin: 60px auto;
@@ -160,12 +159,6 @@ nav ul li a.active {
   border-radius: 15px;
   box-shadow: 0 0 20px #00ffcc33;
   overflow: hidden;
-}
-
-.slides {
-  width: 100%;
-  position: relative;
-  height: auto;
 }
 
 .slide {
@@ -194,23 +187,31 @@ nav ul li a.active {
   to {opacity: 1;}
 }
 
-.slider-buttons {
-  margin-top: 20px;
-}
-
-.slider-buttons button {
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: #00ffcc;
-  color: #0d0d0d;
   border: none;
   padding: 10px 15px;
-  margin: 0 5px;
-  border-radius: 5px;
+  font-size: 2rem;
+  color: #0d0d0d;
   cursor: pointer;
-  font-weight: bold;
+  border-radius: 5px;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 8px #00ffcc;
 }
 
-.slider-buttons button:hover {
+.arrow:hover {
   background-color: #ff0077;
   color: white;
 }
 
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
