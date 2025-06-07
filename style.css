@@ -215,3 +215,79 @@ nav ul li a.active {
 .arrow.right {
   right: 10px;
 }
+.news, .countdown, .stream, .sponsors, .socials {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #121212;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffcc33;
+  text-align: center;
+}
+
+.news h2, .countdown h2, .stream h2, .sponsors h2, .socials h2 {
+  font-size: 2rem;
+  color: #ff0077;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff0077;
+}
+
+.news ul {
+  list-style: none;
+  padding: 0;
+  color: #c0eede;
+  text-align: left;
+}
+
+.news ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #00ffcc44;
+}
+
+#match-timer {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ffcc;
+  margin: 15px 0;
+}
+
+.twitch-frame iframe {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.sponsor-logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.sponsor-logos img {
+  max-height: 60px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+.sponsor-logos img:hover {
+  transform: scale(1.1);
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background: #00ffcc;
+  color: #0d0d0d;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.social-links a:hover {
+  background: #ff0077;
+  color: white;
+}
