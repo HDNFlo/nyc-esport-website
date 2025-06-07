@@ -125,5 +125,36 @@
   setInterval(nextSlide, 10000);
 </script>
 
+  <script>
+  function startCountdown(endTime) {
+    const timerEl = document.getElementById('match-timer');
+
+    function update() {
+      const now = new Date().getTime();
+      const distance = endTime - now;
+
+      if (distance <= 0) {
+        timerEl.textContent = "Match läuft!";
+        return;
+      }
+
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      timerEl.textContent = `${hours.toString().padStart(2, '0')}:${minutes
+        .toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    }
+
+    update();
+    setInterval(update, 1000);
+  }
+
+  // 🕐 Datum/Uhrzeit des nächsten Matches setzen (Beispiel: 10. Juni 2025, 18:00 Uhr)
+  const matchDate = new Date('2025-06-10T18:00:00').getTime();
+  startCountdown(matchDate);
+</script>
+
+
 </body>
 </html>
