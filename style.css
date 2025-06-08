@@ -294,3 +294,40 @@ nav ul li a.active {
   background: #ff0077;
   color: white;
 }
+
+.team-overview {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.team-overview h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.game-team {
+  background-color: #1e1e1e;
+  border-left: 5px solid #00ff88;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.game-team h2 {
+  margin-bottom: 15px;
+  color: #00ff88;
+}
+
+.team-list {
+  list-style: none;
+  padding-left: 0;
+  color: #ccc;
+}
+
+.team-list li {
+  padding: 5px 0;
+  border-bottom: 1px solid #333;
+}
