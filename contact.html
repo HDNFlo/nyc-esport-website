@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt – NYC E-Sport</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Über uns</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="matches.html">Matches</a></li>
+        <li><a href="join.html">Mitmachen</a></li>
+        <li><a href="contact.html" class="active">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1>📫 Kontakt aufnehmen</h1>
+      <p>Du hast Fragen, Anregungen oder möchtest mit uns zusammenarbeiten? Schreib uns!</p>
+
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" required />
+
+        <label for="subject">Betreff</label>
+        <input type="text" id="subject" required />
+
+        <label for="message">Nachricht</label>
+        <textarea id="message" rows="6" required></textarea>
+
+        <button type="submit">Nachricht senden</button>
+      </form>
+    </section>
+  </main>
+
+  <footer style="text-align:center;padding:15px;background:#121212;color:#555;">
+    <p>© 2025 NYC E-Sport</p>
+  </footer>
+</body>
+</html>
