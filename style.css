@@ -93,10 +93,10 @@ footer {
 
 .mission h2, .values h2, .reputation h2 {
   font-size: 2rem;
-  color: #ff0000;
+  color: #ff0077;
   margin-bottom: 15px;
   text-align: center;
-  text-shadow: 0 0 8px #ff0000;
+  text-shadow: 0 0 8px #ff0077;
 }
 
 .mission p {
