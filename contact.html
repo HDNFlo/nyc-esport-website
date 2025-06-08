@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="contact.css" />
 </head>
 <body>
+
   <header>
     <nav>
       <ul>
@@ -26,18 +27,18 @@
       <h1>📫 Kontakt aufnehmen</h1>
       <p>Du hast Fragen, Anregungen oder möchtest mit uns zusammenarbeiten? Schreib uns!</p>
 
-      <form class="contact-form">
+      <form class="contact-form" action="send_mail.php" method="post">
         <label for="name">Name</label>
-        <input type="text" id="name" required />
+        <input type="text" id="name" name="name" required />
 
         <label for="email">E-Mail</label>
-        <input type="email" id="email" required />
+        <input type="email" id="email" name="email" required />
 
         <label for="subject">Betreff</label>
-        <input type="text" id="subject" required />
+        <input type="text" id="subject" name="subject" required />
 
         <label for="message">Nachricht</label>
-        <textarea id="message" rows="6" required></textarea>
+        <textarea id="message" name="message" rows="6" required></textarea>
 
         <button type="submit">Nachricht senden</button>
       </form>
@@ -49,3 +50,4 @@
   </footer>
 </body>
 </html>
+
