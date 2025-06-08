@@ -514,3 +514,14 @@ nav ul li a.active {
   background-color: #cc005f;
 }
 
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 10px;
+}
