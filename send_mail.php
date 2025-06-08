@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt – NYC E-Sport</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Über uns</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="matches.html">Matches</a></li>
+        <li><a href="join.html">Mitmachen</a></li>
+        <li><a href="contact.html" class="active">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1>📫 Kontakt aufnehmen</h1>
+      <p>Du hast Fragen, Anregungen oder möchtest mit uns zusammenarbeiten? Schreib uns!</p>
+
+      <form class="contact-form" action="send_mail.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="subject">Betreff</label>
+        <input type="text" id="subject" name="subject" required />
+
+        <label for="message">Nachricht</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <!-- Neues Datenschutzfeld -->
+        <label class="checkbox-label" for="privacy">
+          <input type="checkbox" id="privacy" name="privacy" required />
+          Ich stimme der <a href="datenschutz.html" target="_blank" rel="noopener">Datenverarbeitung und Datenschutzbestimmungen</a> zu.
+        </label>
+
+        <button type="submit">Nachricht senden</button>
+      </form>
+    </section>
+  </main>
+
+  <footer style="text-align:center;padding:15px;background:#121212;color:#555;">
+    <p>© 2025 NYC E-Sport</p>
+  </footer>
+</body>
+</html>
