@@ -394,7 +394,7 @@ nav ul li a.active {
   border-radius: 10px;
   border: 2px solid #333;
   width: 300px;
-  color: #ccc;
+  color: #ff0077;
   transition: transform 0.3s;
 }
 
@@ -404,7 +404,7 @@ nav ul li a.active {
 
 .match-card h3 {
   margin-top: 0;
-  color: #c0eede;
+  color: #00ffcc;
 }
 
 .match-card img {
