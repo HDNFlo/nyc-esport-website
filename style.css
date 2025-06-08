@@ -331,3 +331,26 @@ nav ul li a.active {
   padding: 5px 0;
   border-bottom: 1px solid #333;
 }
+
+.platform-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.platform-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #292929;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.platform-header small {
+  font-weight: normal;
+  color: #999;
+}
+
